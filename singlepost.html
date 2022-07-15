@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deus | Single-Post</title>
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+    .single_post .singlepost__heading {
+        color: white;
+        border: 2px solid rgb(25, 194, 42);
+        background-color: rgb(25, 194, 42);
+        padding: 2px 10px;
+        border-radius: 5px;
+    }
+
+    .lifestyle-row {
+        background-color: white;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+
+    .latest-news h4 {
+        margin-top: 1rem;
+    }
+
+    .lifestyle-author {
+        margin-bottom: 1rem;
+    }
+
+    .lifestyle-author span {
+        color: gray;
+        font-size: 15px;
+    }
+
+    .lifestyle-row img {
+        width: 100%;
+    }
+
+    .lifestyle-icons {
+        position: sticky;
+        top: 5rem;
+        margin-top: 2rem;
+        text-align: -webkit-center;
+    }
+
+    .lifestyle-icons a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .Meta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 122, 236);
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+    }
+
+    .Youtube {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(242, 0, 0);
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+    }
+
+    .Lkdn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(11, 95, 187);
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+    }
+
+    .Insta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(162, 55, 156);
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+    }
+
+    .TWT {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(28, 153, 230);
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+    }
+
+    .lifestyle-content p{
+        color: black;
+        margin-top: 2rem;
+        line-height: 30px;
+        margin-bottom: 1rem;
+    } 
+    .lifestyle-content h5{
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    .lifestyle-content h6{
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1 col-md-1 col-2 d-flex justify-content-center align-items-center">
+                        <div class="hamburger-lines">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-7 col-4">
+                        <nav class="navbar navbar-expand-lg bg-white">
+                            <div class="container-fluid">
+                                <div class="nav-logo">
+                                    <a href="index.html" class="a-logo">DEUS</a>
+                                </div>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <div class="dropdown">
+                                                <a class="nav-link active" aria-current="page" href="index.html">Home
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div class="dropdown">
+                                                <a class="nav-link active" aria-current="page" href="#">Post
+                                                    <i class="bi bi-chevron-down"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <div class="dropdown">
+                                                <a class="nav-link active" aria-current="page" href="#">Pages
+                                                    <i class="bi bi-chevron-down"></i>
+                                                </a>
+                                            </div>
+                                            <div class="nav-list">
+                                                <ul>
+                                                    <li><a href="about.html">About</a></li>
+                                                    <li><a href="contact.html">Contact</a></li>
+                                                    <li><a href="search.html">Search result</a></li>
+                                                    <li><a href="world.html">Categories</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div class="dropdown">
+                                                <a class="nav-link active" aria-current="page" href="#">Features
+                                                    <i class="bi bi-chevron-down"></i>
+                                                </a>
+                                            </div>
+                                            <div class="nav-list">
+                                                <ul>
+                                                    <li><a href="#">Shortcodes</a></li>
+                                                    <li><a href="#">Single Post</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div class="dropdown">
+                                                <a class="nav-link active" aria-current="page" href="#">Procedure
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center align-items-center">
+                        <div class="news__icon">
+                            <div class="search-icon">
+                                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                                    <g>
+                                        <path
+                                            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <input placeholder="Search" type="search" class="input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="breadcrumb">
+            <div class="container">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumbs">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">News</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">World</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <section class="latest-news single_post">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="lifestyle-row">
+                            <span class="singlepost__heading">Lifestyle</span>
+                            <h4>What Days and Hours are PH Online Shoppers Most Likely to Buy?</h4>
+                            <div class="lifestyle-author">
+                                <span>BY DEOTHEMES - JAN 21, 2018</span>
+                            </div>
+                            <img src="./images/lifestyle.jpg" alt="">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <div class="lifestyle-icons">
+                                        <p class="Meta"><a href=""><i class="bi bi-meta"></i></a></p>
+                                        <p> <a href="" class="Youtube"><i class="bi bi-youtube"></i></a></p>
+                                        <p><a href="" class="Lkdn"><i class="bi bi-linkedin"></i></a></p>
+                                        <p> <a href="" class="Insta"><i class="bi bi-instagram"></i></a></p>
+                                        <p><a href="" class="TWT"><i class="bi bi-twitter"></i></a></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10">
+                                    <div class="lifestyle-content">
+                                        <p>iPrice Group report offers insights on daily e-commerce activity in the
+                                            Philippines and Southeast. Statistically, you stand a better chance for
+                                            success if you have some sort of strategic ask in almost everything that you
+                                            do -- in-person, on the phone, over email, or on social media.</p>
+                                        <p>Think about it: If you make one additional ask per day and convert at around
+                                            10 percent. Then you have three people each month providing you with
+                                            benefits that you'd have missed otherwise It's essential to make sure that
+                                            your ask relates to some direct path to what you want, whether it is
+                                            revenue, a business relationship or anything else of prime importance to
+                                            you.</p>
+                                        <h5>“Dreams and dedication are powerful combination.”</h5>
+                                        <p>Music can help you get into a “flow state” -- losing yourself in the task at
+                                            hand. Even repetitive tasks or mundane assignments seem more bearable, or
+                                            even fun, when your favorite tunes are in your ears.</p>
+                                        <h6>Set a bigger goals and chase them everyday</h6>
+                                        <p>Plus, your eyes won’t be so prone to checking the time. Check out these and
+                                            more reasons to bring your music to work in this Zing Instruments
+                                            infographic below. A great piece of music is an instant mood lifter. Plenty
+                                            of scientific evidence backs this up - we`re happier bunnies when listening
+                                            to music.</p>
+                                        <h6>Attraction needs attention</h6>
+                                        <p>In order to attract what you want, you actually have to consciously and
+                                            strategically think about what you want and focus in on it. Then, you need
+                                            to take some sort of action using the same four strategies you use to ask
+                                            for help in order to make it happen. You can't get what you want sitting
+                                            around on your couch. You need to put yourself out there and stimulate
+                                            interest in person, via email, by phone and through social media.</p>
+                                        <h6>Stylish article pages</h6>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <p>Stimulating interest in person can be powerful, especially if you
+                                                    surround yourself with the right people and the right ideas. A study
+                                                    by Nielsen found that 83 percent of people trust referrals from
+                                                    others they know. If you have a product, service, content or any
+                                                    other value that you provide to others, let them know when you talk
+                                                    in person or over the phone. As an example, if you're working with a
+                                                    charity organization, tell a story about how much money you helped
+                                                    raise for another charity you're affiliated with.</p>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <img src="./images/s1.jpg" alt="">
+                                            </div>
+                                            <p>If you win an important award in an industry, put it in your email
+                                                signature or as a tagline in a piece of social content. Showcasing your
+                                                wins organically and authentically will attract more of the same.</p>
+                                            <h6>List of features</h6>
+                                            <ul>
+                                                <li>Reusable components</li>
+                                                <li>Multiple niches</li>
+                                                <li>Lightning fast</li>
+                                                <li>BEM methodology</li>
+                                                <li>Organized JS/Sass files</li>
+                                            </ul>
+                                            <h6>Summary</h6>
+                                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                                inceptos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. And
+                                                finally the subconscious is the mechanism through which thought impulses
+                                                which are repeated regularly with feeling and emotion are quickened,
+                                                charged. And finally the subconscious is the mechanism through which
+                                                thought impulses which are repeated regularly with feeling and emotion.
+                                            </p>
+                                            <img src="./images/s2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="popular-row">
+                            <h5>POPULAR POSTS</h5>
+                            <div class="popular-content">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-4">
+                                        <div class="popular-image">
+                                            <img src="./images/l1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-8">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <h6 class="popular-heading">Follow These Smartphone Habits of Successful
+                                                    Entrepreneurs</h6>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <span class="popular-text">By Deothemes - </span>
+                                                <span class="popular-text">JAN 21,2018</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-content">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-4">
+                                        <div class="popular-image">
+                                            <img src="./images/fashion.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-8">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <h6 class="popular-heading">Lose These 12 Bad Habits If You're Serious
+                                                    About
+                                                    Becoming a Millionaire</h6>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <span class="popular-text">By Deothemes - </span>
+                                                <span class="popular-text">JAN 21,2018</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-content">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-4">
+                                        <div class="popular-image">
+                                            <img src="./images/l2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-8">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <h6 class="popular-heading">June in Africa: Taxi wars, smarter cities
+                                                    and increased
+                                                    investments</h6>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <span class="popular-text">By Deothemes - </span>
+                                                <span class="popular-text">JAN 21,2018</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-content">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-4">
+                                        <div class="popular-image">
+                                            <img src="./images/fas.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-8">
+                                        <div class="row">
+                                            <div class="col-lg-12 ">
+                                                <h6 class="popular-heading">PUBG Desert Map Finally Revealed, Here Are
+                                                    All The Details</h6>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <span class="popular-text">By Deothemes - </span>
+                                                <span class="popular-text">JAN 21,2018</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-md-5">
+                            <div class="col-lg-12">
+                                <div class="newsletter">
+                                    <h5>NEWSLETTER</h5>
+                                    <div class="news__letter">
+                                        <div class="newsletter__icon">
+                                            <i class="bi bi-envelope"></i>
+                                        </div>
+                                        <div class="newsletter__text">
+                                            Subscribe for our daily news
+                                        </div>
+                                    </div>
+                                    <form action="">
+                                        <div class="input-group mb-3">
+                                            <input type="email" class="form-control" placeholder="Enter your email"
+                                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                            <span class="input-group-text" id="basic-addon2">SIGN UP</span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-md-5">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="newsletter__social">
+                                    <h5>LET'S HANG OUT ON SOCIAL</h5>
+                                    <div class="row mt-4">
+                                        <div class="col-lg-6 col-md-6 col-6">
+                                            <div class="socialmedia_I">
+                                                <div class="social-icon">
+                                                    <i class="bi bi-instagram"></i>
+                                                </div>
+                                                <div class="social-text">Instagram</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-6">
+                                            <div class="socialmedia_L">
+                                                <div class="social-icon">
+                                                    <i class="bi bi-linkedin"></i>
+                                                </div>
+                                                <div class="social-text">Linkedin</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-lg-6 col-md-6 col-6">
+                                            <div class="socialmedia_M">
+                                                <div class="social-icon">
+                                                    <i class="bi bi-meta"></i>
+                                                </div>
+                                                <div class="social-text">META</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-6">
+                                            <div class="socialmedia_Y">
+                                                <div class="social-icon">
+                                                    <i class="bi bi-youtube"></i>
+                                                </div>
+                                                <div class="social-text">You-tube</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-lg-6 col-md-6 col-6">
+                                            <div class="socialmedia_G">
+                                                <div class="social-icon">
+                                                    <i class="bi bi-google"></i>
+                                                </div>
+                                                <div class="social-text">Google</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-6">
+                                            <div class="socialmedia_T">
+                                                <div class="social-icon">
+                                                    <i class="bi bi-twitter"></i>
+                                                </div>
+                                                <div class="social-text">Twitter</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5>DEUS</h5>
+                    <p>&copy; DEUS| Made by Sakshi Malhotra</p>
+                    <div class="footer-icons">
+                        <a href="" class="social-meta"><i class="bi bi-meta"></i></a>
+                        <a href="" class="social-you-tube"><i class="bi bi-youtube"></i></a>
+                        <a href="" class="social-linkedin"><i class="bi bi-linkedin"></i></a>
+                        <a href="" class="social-instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="" class="social-twitter"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>USEFUL LINKS</h5>
+                    <ul>
+                        <li>
+                            <span><i class="bi bi-check-all"></i></span>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <span><i class="bi bi-check-all"></i></span>
+                            <a href="">News</a>
+                        </li>
+                        <li>
+                            <span><i class="bi bi-check-all"></i></span>
+                            <a href="">Advertise</a>
+                        </li>
+                        <li>
+                            <span><i class="bi bi-check-all"></i></span>
+                            <a href="">Support</a>
+                        </li>
+                        <li>
+                            <span><i class="bi bi-check-all"></i></span>
+                            <a href="">Features</a>
+                        </li>
+                        <li>
+                            <span><i class="bi bi-check-all"></i></span>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>POPULAR POSTS</h5>
+                    <div class="footerrow-section">
+                        <div class="footerrow-image">
+                            <img src="./images/business.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="footerrow-content">
+                            <p>Follow These Smartphone Habits of Successful Entrepreneurs</p>
+                            <span class="footerupper-author">By Deothemes - </span>
+                            <span class="footerupper-author">JAN 21,2018</span>
+                        </div>
+                    </div>
+                    <div class="footerrow-section">
+                        <div class="footerrow-image">
+                            <img src="./images/fashion.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="footerrow-content">
+                            <p>Follow These Smartphone Habits of Successful Entrepreneurs</p>
+                            <span class="footerupper-author">By Deothemes - </span>
+                            <span class="footerupper-author">JAN 21,2018</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>NEWSLETTER</h5>
+                    <div class="footer__letter">
+                        <div class="footerletter__icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="footerletter__text">
+                            Subscribe for our daily news
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text p-0" id="basic-addon2">SIGN UP</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
